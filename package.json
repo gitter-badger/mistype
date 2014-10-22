@@ -1,0 +1,29 @@
+{
+  "name": "mistype",
+  "version": "0.1.0",
+  "description": "track mistypes on your site via Mistype.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marinintim/mistype.git"
+  },
+  "keywords": [
+    "mistype"
+  ],
+  "author": "Tim Marinin <marinintim@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marinintim/mistype/issues"
+  },
+  "homepage": "https://github.com/marinintim/mistype",
+  "dependencies": {
+    "hapi": "^7.0.0",
+    "path": "^0.4.9",
+    "nedb": "^0.11.1",
+    "good": "^2.4.0",
+    "handlebars": "^2.0.0"
+  }
+}
