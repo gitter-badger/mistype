@@ -56,7 +56,7 @@
         classes: Array.slice.call(selection.anchorNode.parentElement.classList, 0),
         tag: selection.anchorNode.parentNode.tagName,
         url: window.location.href,
-        additional: typeof config.additional === 'function' ? config.additional() : config.additional
+        additional: typeof window[config.additional] === 'function' ? window[config.additional]() : config.additional
       }
     } else {
       return null;
@@ -72,7 +72,12 @@
     })
   }
 
-  var config = JSON.parse(document.querySelector('script[data-typo]').innerHTML)
+  var me = document.querySelector('script[data-typo]').dataset
+  var config = {}
+
+  for (var key in me) {
+    if (me.hasOwnProperty(key)) config[key] = me[key]
+  }
 
   if(!config.endpoint) {
     config.endpoint = '/oh'
