@@ -1,6 +1,7 @@
 var Hapi = require('hapi'),    
     Good = require('good'),
     Path = require('path'),
+    Url = require('url')
     Datastore = require('nedb')
     //Notifier = require('./notifier.js')
 
@@ -28,14 +29,25 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function(request, reply){
-        console.log(request)
         reply.view('landing')
+    }
+})
+
+
+server.route({
+    method: 'GET',
+    path: '/domain/{domain}',
+    handler: function(request, reply) {
+        Typos.find({domain: request.params.domain}, function(err, typos) {
+            if (err) throw Error()
+                reply.view('list', {typos: typos})
+        })
     }
 })
 
 server.route({
     method: 'GET',
-    path: '/test/{owner}',
+    path: '/see/{owner}',
     handler: function(request, reply){
         console.log(request.params.owner.toString())
         Typos.find({owner: request.params.owner}, function(err, typos) {
@@ -55,6 +67,7 @@ server.route({
             classes: request.payload.classes,
             tag: request.payload.tag,
             url: request.payload.url,
+            domain: Url.parse(request.payload.url).hostname,
             additional: request.payload.additional || null
         }
 
