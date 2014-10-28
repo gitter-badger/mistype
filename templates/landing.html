@@ -1,12 +1,48 @@
 <!doctype html>
+<html lang="en">
 <title>Mistype — track mistakes and mistypes on your site</title>
 <meta charset="utf-8">
 <meta description="Mistype is a webapp which lets users notify you about mistakes in your content">
 
 <style>
+h1, h2 {
+  font-family: sans-serif;
+}
+body {
+  max-width: 32em;
+  margin: 0 auto;
+}
 </style>
 <h1>Mistype</h1>
-<p>Mistype is a webapp to help you and your users. How many times did you notice mistake or mistype on site and couldn't inform author, because you didn't know <em>how</em>?
-<p>But if author had integrated Mistype, you could just select mistyped text and hit Ctrl+Enter. That simple.
-<p>How to enable Mistype on your site? Include <code>&lt;script src="//mistype.co/js" data-typo data-owner="yourId">&lt/script></code> and you're dnoe. Oh, did you notice mistype in the last sentence. Try it!
-<script src="./js" data-typo data-owner="tim"></script>
+<p>Mistype is a webapp for site owners to help you and your users.
+<p>How many times did you notice mistake or mistype on site and couldn't inform author, because you didn't know <em>how</em>?
+<p>But if author had integrated Mistype, you could just select mistyped text and hit Ctrl+Enter. It's that simple.
+
+
+<h2>How to enable Mistype on my site?</h2>
+<p>Include <code>&lt;script src="//mistype.co/js" data-typo data-owner="yourHostna.me">&lt/script></code> and you're dnoe. Oh, did you notice mistype in the last sentence. Try it live!
+<p>This way will make list of noticed mistypes available at http://mistype.co/domain/{yourHostna.me} for anybody with this link. It's pretty basic.
+<p>Accounts to make tracked mistypes private are coming soon.
+
+
+<h2>Something else?</h2>
+<p>URL of page, class list and tag name of element with mistyped text are remembered, so you can locate it on your site with ease.
+<p>You can add any additional info to request: just place function name in data-additional. Our JS is checking whether is window[data-additional-value] a function, and if so, execute and attach return value. Otherwise it's value is simply copypasted to request (it can be helpful if you generate markup on server, you could place username in this field, for example).
+<p>Script is located at //mistype.co/js and it is pretty obvious (less than 100sloc) and configurable. Appearance of notifications can be styled with <code>.mistype-notification</code> and <code>.mistype-notification.in-action</code> classes, first is generic, second means transition.
+
+
+<h2>And one more thing?</h2>
+<p>Yeah, sure, these things are coming soon either:
+  <ul>
+    <li>ability to mark mistake as fi[x]ed. Filling squares is good for your health, you know.
+    <li>screenshots of occurence in the text
+    <li>Slack.com notifications
+    <li>email notifications
+  </ul>
+
+<h2>Who made it?</h2>
+<p>It was made by <a href="//marinintim.github.io">Marinin Tim</a>, for <a href="//frontiermag.ru">Frontier Magazine</a> with &#10084;.
+
+
+<script src="./js" data-typo data-owner="mistype.co"></script>
+</html>

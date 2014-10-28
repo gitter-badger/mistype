@@ -1,11 +1,50 @@
-<table>
+<!doctype html>
+<meta charset="utf-8">
+
+<style>
+
+table {
+  width: 100%;
+  padding: 0;
+}
+
+th { text-align: left;}
+
+tr { border-bottom: 1px solid black; margin: 0; padding: 1em;}
+
+.th-text {
+  width: 40%;
+}
+
+.th-url {
+  width: 30%;
+}
+
+.th-classes {
+  width: 10%;
+}
+
+.th-additional {
+  width: 20%;
+}
+
+</style>
+
+<table class="typos-table">
+<thead>
+  <th class="th-text">Text</th>
+  <th class="th-url">URL</th>
+  <th class="th-classes">Element.Classes</th>
+  <th class="th-additional">Additional information</th>
+</thead>
+<tbody>
 {{#each typos}}
 <tr>
-  <td>[ ]</td>
   <td>{{text}}</td>
   <td>{{url}}</td>
-  <td>{{tag}}; {{classes}}</td>
-  <td>{{additional}}</td>
+  <td>{{tag}}{{classes}}</td>
+  <td>{{day}}<br>{{additional}}</td>
 </tr>
 {{/each}}
+</tbody>
 </table>

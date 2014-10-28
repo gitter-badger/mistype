@@ -1,0 +1,1340 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"en",
+				"encodeURIComponent"
+			],
+			[
+				"e",
+				"encodeURIComponent"
+			],
+			[
+				"li",
+				"lis-n	list-style: none;"
+			],
+			[
+				"list",
+				"list-s	list-style-type: square;"
+			],
+			[
+				"atta",
+				"attachments"
+			],
+			[
+				"handl",
+				"handleAttachments"
+			],
+			[
+				"Challe",
+				"ChallengeView"
+			],
+			[
+				"dele",
+				"deleteAttributes"
+			],
+			[
+				"categ",
+				"categoryAttributes"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"cater",
+				"categoryID"
+			],
+			[
+				"Ca",
+				"categoriesList"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"lh",
+				"lh	line-height"
+			],
+			[
+				"if",
+				"if?	$… = ( … ) ? … : …"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 2633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/app.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "app.js"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 18,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/typos",
+			"settings":
+			{
+				"buffer_size": 1123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/list.html",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Unix",
+				"name": "<table>"
+			}
+		},
+		{
+			"file": "typo.css",
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Unix",
+				"name": "typo.css"
+			}
+		},
+		{
+			"file": "typo.js",
+			"settings":
+			{
+				"buffer_size": 3051,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/landing.html",
+			"settings":
+			{
+				"buffer_size": 788,
+				"line_ending": "Unix",
+				"name": "<!doctype html>"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nBetter CoffeeScript:\n-------------------\n\n  # Better CoffeeScript changelog\n  \n  ```\n  IF YOU SEE THIS MESSAGE\n  Because you have updated the plugin,\n  you might need to restart Sublime Text\n  if the syntax highlighter stopped working.\n  ```\n  \n  ## Version 2.1\n  \n  ### May 2014 Log\n  * Have been doing little improvements with the help of community\n  * Pull requests are always welcome and appreciated.\n  * Looking for active maintainer, will give pointers for development!!!\n  \n  \n  \n  ## Version 2.0\n  \n  Version 2.0 is out!\n  \n  ### Log:\n  * New written Watch Mode.\n  * Line number tracking in Watch Mode.\n  * Toggle 2 columns when enabling Watch Mode.\n  * It is possible to compile with sourcemaps.\n  * Compile litcofee files.\n  * Auto-indent after `else\\n`.\n  * and other bugs fixes.\n  \n  \n  \n",
+			"settings":
+			{
+				"buffer_size": 851,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 100,
+				"line_ending": "Unix",
+				"name": "<!doctype html>"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"color p",
+				"Color Picker"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet image",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"emmet ima",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"twi",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"commit",
+				"Build: Commit to local git"
+			],
+			[
+				"comm",
+				"Build: Commit to local git"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php-image-graph imagemagick"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/tim/dev/mistype",
+		"/home/tim/dev/mistype/db",
+		"/home/tim/dev/mistype/public",
+		"/home/tim/dev/mistype/templates"
+	],
+	"file_history":
+	[
+		"/home/tim/dev/mistype/assets/typo.js",
+		"/home/tim/dev/mistype/index.html",
+		"/home/tim/dev/marinintim.github.io/index.html",
+		"/home/tim/dev/timlinks/index.js",
+		"/home/tim/dev/mistype/typo.js",
+		"/home/tim/frontier/css/highlight.css",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/collapse.js",
+		"/home/tim/frontier/_config.yml",
+		"/home/tim/frontier/CNAME",
+		"/home/tim/frontier/typo/typo.js",
+		"/home/tim/frontier/authors/index.html",
+		"/home/tim/frontier/docs/main.html",
+		"/home/tim/frontier/css/base.css",
+		"/home/tim/frontier/css/index-posts.css",
+		"/home/tim/frontier/css/index-posts.less",
+		"/home/tim/frontier/css/post.less",
+		"/home/tim/frontier/css/post.css",
+		"/home/tim/frontier/css/helpers.css",
+		"/home/tim/.config/sublime-text-3/Packages/WordCount/WordCount.sublime-settings",
+		"/home/tim/.config/sublime-text-3/Packages/User/WordCount.sublime-settings",
+		"/home/tim/frontier/styleguide-template/index.html",
+		"/home/tim/frontier/biweekly/success.html",
+		"/home/tim/frontier/biweekly/confirm.html",
+		"/home/tim/frontier/biweekly/archive.html",
+		"/home/tim/frontier/biweekly/index.html",
+		"/home/tim/dev/quotesofgreatpeople/index.html",
+		"/home/tim/frontier/_posts/2014-09-09-small-files.markdown",
+		"/home/tim/dev/quotesofgreatpeople/index.js",
+		"/home/tim/frontier/_includes/head.html",
+		"/home/tim/frontier/_posts/2014-06-22-javascript-cryptography.markdown",
+		"/home/tim/frontier/_posts/2014-06-20-hello-world.markdown",
+		"/home/tim/frontier/_posts/2014-08-14-app-vs-content.markdown",
+		"/home/tim/frontier/_layouts/post.html",
+		"/home/tim/frontier/_layouts/page.html",
+		"/home/tim/frontier/scripts/vk-comments.js",
+		"/home/tim/frontier/css/main.less",
+		"/home/tim/frontier/editor/index.html",
+		"/home/tim/frontier/editor/editor.css",
+		"/home/tim/frontier/css/styleguide.md",
+		"/home/tim/frontier/_posts/2014-07-23-email-first.markdown",
+		"/home/tim/frontier/_site/mobile-internet-explorer-userstring.html",
+		"/home/tim/frontier/_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
+		"/home/tim/frontier/css/tiles.less",
+		"/home/tim/frontier/human/index.html",
+		"/home/tim/frontier/index.html",
+		"/home/tim/frontier/saloon/index.html",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/popover.js",
+		"/home/tim/frontier/_site/professional-under-pressure.html",
+		"/home/tim/frontier/README.md",
+		"/home/tim/frontier/editor/bower_components/jquery/src/var/indexOf.js",
+		"/home/tim/frontier/editor/bower_components/jquery/src/intro.js",
+		"/home/tim/frontier/editor/bower_components/bootstrap/.bower.json",
+		"/home/tim/frontier/editor/bower_components/bootstrap/README.md",
+		"/home/tim/frontier/editor/bower_components/bootstrap/less/mixins/text-overflow.less",
+		"/home/tim/frontier/editor/bower_components/bootstrap/dist/css/bootstrap-theme.css",
+		"/home/tim/frontier/editor/bower_components/jquery/src/dimensions.js",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/dropdown.js",
+		"/home/tim/frontier/saloon/bower_components/bootstrap/less/responsive-embed.less",
+		"/home/tim/frontier/_includes/header.html",
+		"/home/tim/frontier/_site/jsonstub-and-others.html",
+		"/home/tim/frontier/_site/authors/index.html",
+		"/home/tim/frontier/about.md",
+		"/home/tim/frontier/_posts/2014-06-25-jsonstub-and-others.markdown",
+		"/home/tim/frontier/_posts/2014-07-20-switch-from-switch.markdown",
+		"/home/tim/frontier/_posts/2014-06-26-professional-under-pressure.markdown",
+		"/home/tim/frontier/_includes/footer.html",
+		"/home/tim/frontier/recipes/transitions.html",
+		"/home/tim/frontier/_posts/2014-06-24-inline-block.markdown",
+		"/home/tim/frontier/img/outdoor-icons-small.png",
+		"/home/tim/frontier/_site/email-first.html",
+		"/home/tim/frontier/_site/switch-from-switch.html",
+		"/home/tim/frontier/_site/inline-block.html",
+		"/home/tim/frontier/recipes/long.html",
+		"/home/tim/frontier/_site/CNAME",
+		"/home/tim/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+		"/home/tim/frontier/recipes/vk.html",
+		"/home/tim/frontier/_site/you-re-already-good-designer.html",
+		"/home/tim/frontier/feed.xml",
+		"/home/tim/frontier/_site/hello-world.html",
+		"/home/tim/frontier/css/tiles.css",
+		"/home/tim/frontier/img/outdoor-icons-large.png",
+		"/home/tim/frontier/_posts/2014-06-21-inline-block.markdown",
+		"/home/tim/dev/vk-irc/Gruntfile.js",
+		"/home/tim/frontier/_posts/2014-06-22-bad-work.markdown",
+		"/home/tim/frontier/_layouts/default.html",
+		"/home/tim/frontier/css/main.css",
+		"/home/tim/frontier/_posts/2014-06-21-w3cschools.markdown",
+		"/home/tim/dev/bearlog/siteConfig.js",
+		"/home/tim/dev/bearlog/app/index.js",
+		"/home/tim/public_html/cotd/page.html",
+		"/home/tim/public_html/cotd/templates/Post",
+		"/home/tim/public_html/cotd/templates/Sidebar",
+		"/home/tim/public_html/cotd/public/index.html",
+		"/home/tim/public_html/cotd/coffee/app.coffee",
+		"/home/tim/public_html/cotd/coffee/Views/Profile.coffee",
+		"/home/tim/public_html/cotd/coffee/Views/Sidebar.coffee",
+		"/home/tim/public_html/cotd/coffee/Views/Page.coffee",
+		"/home/tim/public_html/cotd/coffee/Views/Post.coffee",
+		"/home/tim/public_html/cotd/coffee/Views/Feed.coffee",
+		"/home/tim/public_html/cotd/scss/main.scss",
+		"/home/tim/Загрузки/LocalSettings.php",
+		"/home/tim/public_html/cotd/public/js/Templates/Sidebar.js",
+		"/home/tim/public_html/cotd/public/js/Templates/Page.js",
+		"/home/tim/public_html/cotd/templates/Page",
+		"/home/tim/public_html/cotd/cotd.sublime-project",
+		"/home/tim/public_html/cotd/public/js/Views/Post.js",
+		"/home/tim/public_html/cotd/coffee/Views/Error.coffee",
+		"/home/tim/public_html/cotd/public/js/Models/Challenge.js",
+		"/home/tim/public_html/cotd/public/js/Views/Error.js",
+		"/home/tim/public_html/cotd/untitled.sublime-project",
+		"/home/tim/public_html/cotd/Gulpfile.js",
+		"/home/tim/public_html/cotd/coffee/Models/Challenge.coffee",
+		"/home/tim/public_html/cotd/templates/Post.html",
+		"/home/tim/public_html/cotd/public/js/app.js",
+		"/home/tim/public_html/cotd/coffee/main.coffee",
+		"/home/tim/public_html/cotd/public/css/main.css",
+		"/home/tim/public_html/cotd/public/js/main.js",
+		"/home/tim/public_html/cotd/public/js/App.js",
+		"/home/tim/public_html/cotd/public/css/styles.css",
+		"/home/tim/public_html/cotd/index.html",
+		"/home/tim/public_html/cotd/css/styles.css",
+		"/home/tim/public_html/cotd/html5bones-1.6.2/main-template.html",
+		"/home/tim/public_html/cotd/html5bones-1.6.2/clean-templates/main-template-no-comments.html",
+		"/home/tim/golang/src/github.com/marinintim/hello/hello.go",
+		"/home/tim/golang/src/github.com/opesun/goquery/goquery.go",
+		"/home/tim/golang/src/github.com/marinintim/devops/main.go",
+		"/home/tim/public_html/agenda/css/main.css",
+		"/home/tim/public_html/actimind/public/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/tim/public_html/cotd/coffee",
+			"/home/tim/public_html/cotd",
+			"/home/tim/public_html/actimind/public/js",
+			"/home/tim/public_html/actimind/public/js,*.coffee",
+			"/home/tim/public_html/actimind/public/js",
+			"/home/tim/public_html/actimind/public/*",
+			"/home/tim/public_html/tkachev,-/home/tim/public_html/tkachev/vendor/*,-/home/tim/public_html/tkachev/doc/*",
+			"/home/tim/public_html/tkachev,-/home/tim/public_html/tkachev/vendor,-/home/tim/public_html/tkachev/doc",
+			"/home/tim/public_html/tkachev,-/home/tim/public_html/tkachev/vendor",
+			"/home/tim/public_html/tkachev",
+			"/home/tim/public_html/tkachev/templates"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"params",
+			"'",
+			" = ",
+			"noty.style.",
+			"tag",
+			"TypoThere",
+			"stylesheet",
+			"highlight",
+			">\n",
+			"style=\"word-wrap:break-word;color:#6dc6dd;font-weight:normal;text-decoration:underline\"",
+			";}\n",
+			"stylesheet/css",
+			"less",
+			"content",
+			":;}",
+			"editor",
+			"    \\n",
+			"\"\\.",
+			"```",
+			"\\n```",
+			"\\*\\/",
+			"\\/\\* \\/\\*",
+			"\\n\\.highlight (.+) \\{(.+) (/\\*.+)\\*/",
+			"\\/\\*(.+)\\n(.+)\\n(.+)\\n\\*\\/",
+			"\\n\\.highlight (.+) \\{(.+) (/\\*.+)\\*/",
+			"\\n\\.highlight (.+) (.+) (/\\*.+)\\*/",
+			"\\n(.+) (/\\*.+\\*/)",
+			"###",
+			"console",
+			"groups[-",
+			"text",
+			"h3",
+			"\\s+view\\n",
+			"\\s+view",
+			"blockquote",
+			")px",
+			"* ",
+			"&.",
+			"icon",
+			"\n.",
+			"knife",
+			"последнего",
+			";\n",
+			"=>",
+			"Views",
+			"Feed",
+			"Workspace",
+			"ol",
+			"Thu [0-9][0-9]:[0-9][0-9]",
+			"Config",
+			"this.",
+			"	",
+			"set",
+			"{{debug",
+			"{{debug}}",
+			"console.log",
+			"</title>",
+			"<title>",
+			"<description>(\\n.+)+</description>",
+			"<description>(\\n.*)+</desccription>",
+			"<!\\[CDATA\\[[а-яА-Я 0-9.,a-zA-Z-]+\\]\\]>",
+			"<[a-z]+>[a-zA-Z:/.0-9]+</[a-z]+>",
+			"pr-address-country",
+			"sync:",
+			"localstorage",
+			"Fetch",
+			"text/template",
+			"validate",
+			"()",
+			"({})",
+			" class=\"([a-z-]+(| ([a-z-])+))\"",
+			" dir=\"ltr\"",
+			"dir=\"ltr\"",
+			" role=\"[a-z]+\"",
+			"h2",
+			"hr ",
+			"hr",
+			"\"",
+			"^[1-9]",
+			"\\n",
+			"Like\\n",
+			"|Comment",
+			"Show all [0-9]+ comments",
+			"[0-9]+ [a-z]+ at [0-9]+:[0-9]+ am",
+			"[0-9]+ [a-z]+ at [0-9]+:[0-9]+ pm",
+			"Like[0-9]+\\n",
+			"to Timofey|",
+			"|",
+			"Show all 12 comments",
+			"Your comment..",
+			"online",
+			"Like[1-9]+ [a-z]+ at [0-9]+:[0-9]+ pm|Reply",
+			"Like[1-9]+ [a-z]+ at [0-9]+:[0-9]+ am|Reply",
+			"Like[1-9]+ [a-z]+ at [0-9]+:[0-9]+ [am]m|Reply",
+			"pieChanged",
+			"textarea",
+			"[а-я]",
+			"а",
+			"[а-я]",
+			"\\t[а-я]+",
+			"[1-9]+\\t[А-Я]",
+			"[1-9]+\\t[а-яА-Я]",
+			"path",
+			"Chrome",
+			"Chromr",
+			"Chrome",
+			"ChromePhp",
+			"Chrome",
+			"print_r",
+			"var_",
+			"var_dump",
+			"categories",
+			"category",
+			"new View\\(\\)",
+			"new View()",
+			"print_r",
+			"userser",
+			"managedU",
+			"{user",
+			"print_r",
+			"ChromePHP::log",
+			"{{path}}([^/].)",
+			"banner",
+			"ul*2>li*5",
+			"p",
+			"lorem",
+			"40",
+			"SimpleModel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"payload",
+			"",
+			": ",
+			"",
+			"Mistype",
+			"",
+			"stylesheet",
+			"css",
+			"c",
+			"\\n",
+			"\"",
+			"    ",
+			"\\n\\n```",
+			"\\*\\/\\n",
+			"\\n\\/\\*",
+			"\\/\\* $3\\n```<span class=\"highlight\"><span class=\"$1\">example</span></span>```\\n\\*\\/\\n\\.highlight $1 \\{$2",
+			"\\/\\/$1\\n\\/\\/$2\\n\\/\\/$3",
+			"\\n $3 \\n $1 \\n Styleguide 2.1\\n\\*\\/\\n \\{$2",
+			"\\n $3 \\n $1 \\n Styleguide 2.1\\n\\*\\/ \\{$2",
+			"\\n $3 \\n $1 \\*\\/ \\{$2",
+			"\\n $3 \\n $1 \\*\\/ $2",
+			"\\n $3 \\n $1 \\*/ $2",
+			"\\n $2 $1",
+			"\\n $1 $0",
+			"$1 $0",
+			"##",
+			", ",
+			"px)",
+			"",
+			"&",
+			"->",
+			"",
+			"@",
+			"    ",
+			"",
+			"localStorage",
+			"text/x-handlebars-template",
+			" {}",
+			"",
+			"h3",
+			"",
+			"\"$0",
+			"\",\\n",
+			"",
+			"\"$0\",",
+			"\"$1\",",
+			"",
+			"request",
+			"pages",
+			"page",
+			"user",
+			"{managedUser",
+			"ChromePHP::log",
+			"print_r",
+			"p"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1939,
+								1939
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "javascript",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"auto_name": "app.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 18,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "db/typos",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"auto_name": "<table>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "typo.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "typo.css",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "typo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "javascript",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/landing.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"auto_name": "<!doctype html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"auto_name": "<!doctype html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffee_compile_output":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "mistype.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ijs",
+				"index.js"
+			],
+			[
+				"in",
+				"templates/index.html"
+			],
+			[
+				"base",
+				"css/base.css"
+			],
+			[
+				"bas",
+				"css/base.css"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"ma",
+				"css/mainpage.css"
+			],
+			[
+				"main",
+				"css/mainpage.css"
+			],
+			[
+				"",
+				"_posts/2014-09-09-small-files.markdown"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"post.cs",
+				"css/post.css"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"mainpage",
+				"css/mainpage.css"
+			],
+			[
+				"post.css",
+				"css/post.css"
+			],
+			[
+				"b",
+				"css/base.css"
+			],
+			[
+				"foo",
+				"_includes/footer.html"
+			],
+			[
+				"fo",
+				"_includes/footer.html"
+			],
+			[
+				"foot",
+				"_includes/footer.html"
+			],
+			[
+				"index.js",
+				"~/dev/quotesofgreatpeople/index.js"
+			],
+			[
+				"vk",
+				"scripts/vk-comments.js"
+			],
+			[
+				"vk-co",
+				"scripts/vk-comments.js"
+			],
+			[
+				"post.h",
+				"_layouts/post.html"
+			],
+			[
+				"post.l",
+				"css/post.less"
+			],
+			[
+				"readm",
+				"README.md"
+			],
+			[
+				"head",
+				"_includes/head.html"
+			],
+			[
+				"he",
+				"css/helpers.css"
+			],
+			[
+				"hel",
+				"css/helpers.css"
+			],
+			[
+				"st",
+				"css/styleguide.md"
+			],
+			[
+				"sty",
+				"css/styleguide.md"
+			],
+			[
+				"s",
+				"css/styleguide.md"
+			],
+			[
+				"styl",
+				"css/styleguide.md"
+			],
+			[
+				"hig",
+				"css/highlight.css"
+			],
+			[
+				"post.le",
+				"css/post.less"
+			],
+			[
+				"post.",
+				"css/post.less"
+			],
+			[
+				"autho",
+				"authors/index.html"
+			],
+			[
+				"inde",
+				"authors/index.html"
+			],
+			[
+				"app",
+				"_posts/2014-08-14-app-vs-content.markdown"
+			],
+			[
+				"user",
+				"_posts/2014-08-07-mobile-internet-explorer-userstring.markdown"
+			],
+			[
+				"ema",
+				"_posts/2014-07-23-email-first.markdown"
+			],
+			[
+				"eam",
+				"_posts/2014-07-23-email-first.markdown"
+			],
+			[
+				"m",
+				"css/main.less"
+			],
+			[
+				"post.html",
+				"_layouts/post.html"
+			],
+			[
+				"index.less",
+				"css/index.less"
+			],
+			[
+				"swi",
+				"_posts/2014-07-20-switch-from-switch.markdown"
+			],
+			[
+				"inline",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"inlin",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"inlion",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"head.",
+				"_includes/head.html"
+			],
+			[
+				"i",
+				"css/index.less"
+			],
+			[
+				"less",
+				"css/post.less"
+			],
+			[
+				"post.htm",
+				"_layouts/post.html"
+			],
+			[
+				"main.",
+				"css/main.css"
+			],
+			[
+				"index.htm",
+				"index.html"
+			],
+			[
+				"post.ht",
+				"_layouts/post.html"
+			],
+			[
+				"tiles",
+				"css/tiles.less"
+			],
+			[
+				"foote",
+				"_includes/footer.html"
+			],
+			[
+				"vk-",
+				"scripts/vk-comments.js"
+			],
+			[
+				"vk-com",
+				"scripts/vk-comments.js"
+			],
+			[
+				"def",
+				"_layouts/default.html"
+			],
+			[
+				"sw",
+				"_posts/2014-07-20-switch-from-switch.markdown"
+			],
+			[
+				"post.co",
+				"~/public_html/cotd/coffee/Views/Post.coffee"
+			],
+			[
+				"index.h",
+				"index.html"
+			],
+			[
+				"bac",
+				"js/vendor/backbone.js"
+			],
+			[
+				"ba",
+				"js/vendor/backbone.js"
+			],
+			[
+				"glob",
+				"js/Views/Global.coffee"
+			],
+			[
+				"main.cs",
+				"css/main.css"
+			],
+			[
+				"indexhtm",
+				"templates/index.html"
+			],
+			[
+				"conorder",
+				"app/Controller_Order.php"
+			],
+			[
+				"ind.ht",
+				"templates/index.html"
+			],
+			[
+				"manin",
+				"templates/manageIndex.html"
+			],
+			[
+				"main.css",
+				"css/main.css"
+			],
+			[
+				"mancat",
+				"templates/manageCategory.html"
+			],
+			[
+				"manitem",
+				"templates/manageItem.html"
+			],
+			[
+				"controller_item",
+				"app/Controller_Item.php"
+			],
+			[
+				"index.ht",
+				"templates/index.html"
+			],
+			[
+				"view_user",
+				"app/View_User.php"
+			],
+			[
+				"index.html",
+				"templates/index.html"
+			],
+			[
+				"index.php",
+				"index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/frontier/frontier.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

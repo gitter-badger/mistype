@@ -1,5 +1,6 @@
 var Hapi = require('hapi'),    
     Good = require('good'),
+    Joi =  require('joi'),
     Path = require('path'),
     Url = require('url')
     Datastore = require('nedb')
@@ -37,11 +38,26 @@ server.route({
 server.route({
     method: 'GET',
     path: '/domain/{domain}',
+
     handler: function(request, reply) {
-        Typos.find({domain: request.params.domain}, function(err, typos) {
-            if (err) throw Error()
-                reply.view('list', {typos: typos})
-        })
+        if (request.params.domain.indexOf('.') !== -1) {
+            Typos.find({owner: request.params.domain}, function(err, typos) {
+                if (err) throw Error()
+                    reply.view('list', {typos: typos})
+            })
+        }
+        else {
+            server.log('info', '/domain/ request without dot')
+            reply.redirect('/')
+        }
+    },
+
+    config: {
+        validate: {
+            params: {
+                domain: Joi.string().hostname()
+            }
+        }
     }
 })
 
@@ -67,6 +83,7 @@ server.route({
             classes: request.payload.classes,
             tag: request.payload.tag,
             url: request.payload.url,
+            day: new Date(),
             domain: Url.parse(request.payload.url).hostname,
             additional: request.payload.additional || null
         }
@@ -79,21 +96,22 @@ server.route({
     }
 })
 
-server.route({
-    method: 'GET',
-    path: '/js',
-    handler: function(request, reply) {
-        reply.file('typo.js')
+server.route([
+    {
+        method: 'GET',
+        path: '/js',
+        handler: function(request, reply) {
+            reply.file('typo.js')
+        }
+    },
+    {
+        method: 'GET',
+        path: '/css',
+        handler: function(request, reply) {
+            reply.file('typo.css')
+        }
     }
-})
-
-server.route({
-    method: 'GET',
-    path: '/css',
-    handler: function(request, reply) {
-        reply.file('typo.css')
-    }
-})
+])
 
 server.route({
     method: 'GET',
