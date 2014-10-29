@@ -7,7 +7,7 @@ var Hapi = require('hapi'),
     //Notifier = require('./notifier.js')
 
 
-var server = new Hapi.Server(5051)
+var server = new Hapi.Server(80)
 
 server.views({
     engines: {
