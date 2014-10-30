@@ -13,6 +13,7 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 var server = new Hapi.Server(server_ip_address, server_port, {cors: true})
 
+
 server.views({
     engines: {
         html: require('handlebars')
