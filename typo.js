@@ -80,7 +80,7 @@
   }
 
   if(!config.endpoint) {
-    config.endpoint = '//mistype.co/oh'
+    config.endpoint = '//www.mistype.co/oh'
   }
 
   if(!config.listeners) {
@@ -98,7 +98,7 @@
 
   if (!config.nocss) {
     requster({
-      url: '//mistype.co/css', 
+      url: '//www.mistype.co/css', 
       callback: function(response) {
         var styleEl = document.createElement('style')
         styleEl.innerHTML = response
