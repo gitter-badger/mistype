@@ -53,7 +53,7 @@
     if (selection.anchorNode !== null && selection.toString() !== '') {
       return {
         text: selection.toString(),
-        classes: Array.slice.call(selection.anchorNode.parentElement.classList, 0),
+        classes: Array.prototype.slice.call(selection.anchorNode.parentElement.classList, 0),
         tag: selection.anchorNode.parentNode.tagName,
         url: window.location.href,
         additional: typeof window[config.additional] === 'function' ? window[config.additional]() : config.additional
@@ -80,7 +80,7 @@
   }
 
   if(!config.endpoint) {
-    config.endpoint = '/oh'
+    config.endpoint = '//mistype.co/oh'
   }
 
   if(!config.listeners) {
@@ -98,7 +98,7 @@
 
   if (!config.nocss) {
     requster({
-      url: '/css', 
+      url: '//mistype.co/css', 
       callback: function(response) {
         var styleEl = document.createElement('style')
         styleEl.innerHTML = response
