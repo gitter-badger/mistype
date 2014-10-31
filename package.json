@@ -4,7 +4,7 @@
   "description": "track mistypes on your site via Mistype.co",
   "main": "index.js",
   "scripts": {
-    "test": "lab -vc",
+    "test": "lab -vlc",
     "start": "node index.js"
   },
   "repository": {
