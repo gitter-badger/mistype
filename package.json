@@ -4,7 +4,7 @@
   "description": "track mistypes on your site via Mistype.co",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/lab/bin/lab -c",
+    "test": "lab -vc",
     "start": "node index.js"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "joi": "^4.7.0"
   },
   "devDependencies": {
+    "code": "^1.2.0",
     "lab": "^5.0.1"
   }
 }

@@ -138,3 +138,5 @@ server.pack.register(Good, function (err) {
         });
     }
 })
+
+module.exports = server
