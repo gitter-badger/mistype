@@ -126,12 +126,15 @@ server.route({
     }
 })
 
+
 server.pack.register(Good, function (err) {
     if (err) {
         throw err
     }
 
-    server.start(function () {
-        server.log('info', 'Server of Mistype is running at: ' + server.info.uri)
-    })
+    if (!module.parent) {
+        server.start(function() {
+            server.log("Server started", server.info.uri);
+        });
+    }
 })

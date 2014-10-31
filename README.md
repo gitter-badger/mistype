@@ -1,5 +1,7 @@
 mistype
 =======
+[ ![Codeship Status for marinintim/mistype](https://www.codeship.io/projects/28afe760-4315-0132-de8a-66a911c3ce6f/status)](https://www.codeship.io/projects/44577)
+
 
 Mistype.co — let your users proof-read your text once again
 
