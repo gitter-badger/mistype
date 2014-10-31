@@ -1,5 +1,8 @@
 mistype
 =======
+
+Don't use it in production now. Database is erased at each deployment.
+
 [ ![Codeship Status for marinintim/mistype](https://www.codeship.io/projects/28afe760-4315-0132-de8a-66a911c3ce6f/status)](https://www.codeship.io/projects/44577)
 
 
