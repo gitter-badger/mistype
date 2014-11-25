@@ -1,5 +1,6 @@
 mistype
 =======
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/marinintim/mistype?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Don't use it in production now. Database is erased at each deployment.
 
