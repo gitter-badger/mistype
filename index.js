@@ -1,17 +1,80 @@
-var Hapi = require('hapi'),    
+
+var nconf = require('nconf'),
+    Hapi = require('hapi'),    
     Good = require('good'),
     Joi =  require('joi'),
     Path = require('path'),
-    Url = require('url')
-    Datastore = require('nedb')
-    //Notifier = require('./notifier.js')
+    Url = require('url');
 
+nconf.defaults({'port': 8080})
+     .argv()
+     .env()
+     .file({ file: 'local.json' });
 
-//OpenShift env
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+var mailgun = require('mailgun');
+    nano = require('nano')(nconf.get('couchurl')),
 
-var server = new Hapi.Server(server_ip_address, server_port, {cors: true})
+mg = new mailgun.Mailgun(nconf.get('mailgunkey'));
+
+var server = new Hapi.Server(nconf.get('port'), {cors: true})
+
+var sendEmail = function(change) {
+    var mistype = change.doc;
+    users.get(mistype.owner, function(err, doc){
+        if (err) {
+            server.log('error searching user:' + mistype.owner, err)
+        }
+        else {
+            mg.sendText(
+                'robots@mistype.co', 
+                doc.email,
+                'Hey, mistype at ' + mistype.url,
+                'Some user tells that at ' + mistype.url + ' mistype is hiding!\n\nThere it is:\n'+mistype.text+'\nelement + class list: ' + mistype.tag + ' '+ mistype.classes + (mistype.additional ? '\nAdditional info: ' + mistype.additional : '') + '\nReported at ' + mistype.day +'\n\n\nHope you\'ll fix it soon,\nMistype\'s robots'
+                )
+            logs.insert({type: 'notification', to: doc}, function(err, doc) {
+                if (err) console.log('error in logging access to js', err)
+            })
+        }
+    })
+}
+
+var mistypes = nano.use('mistypes');
+console.log('mistypes ok');
+var users = nano.use('users');
+console.log('users ok');
+var logs = nano.use('logs');
+console.log('logs ok');
+
+var feed = mistypes.follow({since: 'now', include_docs: true})
+
+feed.on('change', sendEmail)
+feed.follow()
+console.log('follow ok')
+
+var addUser = function(email, reply) {
+    users.insert({email: email}, function(err, smth){
+        if (err) {
+            server.log('error at adding user', err)
+            logs.insert({type: 'error', error: err}, function(err0, doc) {
+                if (err0) console.log('error in logging error -_-', err)
+            })
+        }
+        else {
+            reply.view('step2', {id: smth.id})
+        }
+    })
+}
+
+var addMistype = function(typo, retry) {
+    mistypes.insert(typo, function(err, savedTypo) {
+        if (err) {
+            server.log('error at adding mistype:', err)
+            if (retry < 5) {
+                setTimeout(addMistype.bind(typo, retry + 1), 1000)
+            }
+        }
+    })
+}
 
 
 server.views({
@@ -21,70 +84,55 @@ server.views({
     path: Path.join(__dirname, 'templates')
 })
 
-var Typos = new Datastore({
-    filename: 'db/typos',
-    autoload: true
-})
-
-var Users = new Datastore({
-    filename: 'db/users',
-    autoload: true
-})
-
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: function(request, reply){
-        reply.view('landing')
-    }
-})
 
 
-server.route({
-    method: 'GET',
-    path: '/domain/{domain}',
-
-    handler: function(request, reply) {
-        if (request.params.domain.indexOf('.') !== -1) {
-            Typos.find({owner: request.params.domain}, function(err, typos) {
-                if (err) throw Error()
-                    reply.view('list', {typos: typos})
-            })
-        }
-        else {
-            server.log('info', '/domain/ request without dot')
-            reply.redirect('/')
+server.route([
+    {
+        method: 'GET',
+        path: '/',
+        handler: function(request, reply){
+            reply.view('step1')
         }
     },
 
-    config: {
-        validate: {
-            params: {
-                domain: Joi.string().hostname()
-            }
+    {
+        method: 'GET',
+        path: '/faq',
+        handler: function(request, reply){
+            reply.view('faq')
         }
     }
-})
+])
 
-server.route({
-    method: 'GET',
-    path: '/see/{owner}',
-    handler: function(request, reply){
-        console.log(request.params.owner.toString())
-        Typos.find({owner: request.params.owner}, function(err, typos) {
-            if (err) throw Error()
-            reply.view('list', {typos: typos})
-        })
+
+
+
+server.route ([
+    {
+        method: 'POST',
+        path: '/user',
+        handler: function(request, reply){
+            addUser(request.payload.email, reply)
+        }
+    },
+    {
+        method: 'GET',
+        path: '/user',
+        handler: function(request, reply) {
+            reply.redirect('/')
+        }
     }
-})
+])
 
 server.route({
     method: 'POST',
     path: '/oh',
     handler: function(request, reply){
+        reply(true)
+
         var typo = {
-            owner: request.payload.owner,
-            text: request.payload.text,
+            owner: request.payload.owner || 'nobody',
+            text: request.payload.text ,
             classes: request.payload.classes,
             tag: request.payload.tag,
             url: request.payload.url,
@@ -93,11 +141,16 @@ server.route({
             additional: request.payload.additional || null
         }
 
-        Typos.insert(typo, function(err, savedTypo) {
-            console.log('fukken saved:', savedTypo)
-            //Notifier.update({owner: savedTypo.owner, typoId: savedTypo._id})
-            reply(savedTypo)
-        })
+        addMistype(typo)
+    },
+    config: {
+        /*validate: {
+            payload: {
+                owner: Joi.string().min(1).required(),
+                text: Joi.string().min(1).required(),
+                url: Joi.string().min(1).required()
+            }
+        }*/
     }
 })
 
@@ -107,6 +160,9 @@ server.route([
         path: '/js',
         handler: function(request, reply) {
             reply.file('typo.js')
+            logs.insert({type: 'access', headers: request.headers}, function(err, doc) {
+                if (err) console.log('error in logging access to js', err)
+            })
         }
     },
     {
@@ -115,17 +171,15 @@ server.route([
         handler: function(request, reply) {
             reply.file('typo.css')
         }
+    },
+    {
+        method: 'GET',
+        path: '/public/{filename}',
+        handler: function(request, reply) {
+            reply.file(Path.join(__dirname, 'public', request.params.filename))
+        }
     }
 ])
-
-server.route({
-    method: 'GET',
-    path: '/public/{filename}',
-    handler: function(request, reply) {
-        reply.file(Path.join(__dirname, 'public', request.params.filename))
-    }
-})
-
 
 server.pack.register(Good, function (err) {
     if (err) {
@@ -138,5 +192,9 @@ server.pack.register(Good, function (err) {
         });
     }
 })
+
+process.on('uncaughtException', function (err) {
+    console.log('uncaughtException!!', err)
+});
 
 module.exports = server

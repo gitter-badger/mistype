@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<title>Mistype — track mistakes and mistypes on your site</title>
+<meta charset="utf-8">
+<meta description="Mistype is a webapp which lets users notify you about mistakes in your content">
+
+<style>
+html, body {
+  font-family: sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+main {
+  max-width: 30em;
+  margin: 1em auto;
+}
+
+input {
+  margin: .5em .5em .5em 0;
+  padding: 3px;
+  font-size: 1.3em;
+}
+
+input[name="email"] {
+  border: 1px solid #111;
+  width: 30ex;
+}
+
+input[type="submit"] {
+  background: cadetblue;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+}
+input[type="submit"]::before {
+  background-image: url(http://emoji.fileformat.info/gemoji/rocket.png);
+  content: ' ';
+}
+
+.doubts {
+  color: #111;
+}
+
+h1 {
+  border-bottom: .1em dashed #111;
+}
+
+</style>
+<main>
+  <h1>Mistype</h1>
+<p>Mistype is here to help you.
+<p>How many times did you notice error on site and couldn't inform author, because you didn't know <em>how</em>?
+<p>But if author had integrated Mistype, you could just select wrong text and hit Ctrl+Enter. It's that simple.
+
+
+<h2>How to enable Mistype on my site?</h2>
+<p>After <a href="/">one-step registration</a> you'll receive a little &lt;script> tag. Just drop it in your site's code and you're covered. Be sure to insert some text like “Report mistakes via Ctrl+Enter” somewhere as well to notify users about their's new superpower.
+
+<h2>How would I receive notifications?</h2>
+<p>We'll send you an email for each reported error.</p>
+<p>URL of page, class list and tag name of element with mistyped text are remembered, so you can track it back.
+
+<h2>Something else?</h2>
+<p>You can add any additional info to request: just place function name in data-additional. Our JS is checking whether is window[data-additional-value] a function, and if so, executes and attaches return value. Otherwise it's value is simply copypasted to request (it can be helpful if you generate markup on server, you could place username in this field, for example).
+
+<p id="css-appearance">Appearance of notifications can be styled with <code>.mistype-notification</code> and <code>.mistype-notification.in-action</code> classes, first is generic, second means transition (in &amp; out).
+
+<h2>Who made it?</h2>
+<p>It was made by <a href="http://marinintim.com">Marinin Tim</a> with &#10084;.
+
+<h2>Register today free ↓</h2>
+<form action="/user" method="post">
+  <input type="email" placeholder="old plain email suits well" required name="email">
+  <input type="submit" value="Skyrocket my site!">
+</form>
+</main>
+
+
+<script src="./js" data-typo data-owner="mistype.co"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56808799-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

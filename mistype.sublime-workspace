@@ -75,7 +75,39 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 2633,
+				"buffer_size": 4666,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tim/frontier/index.html",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tim/frontier/_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 51,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/tim/frontier/_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 2537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 730,
 				"line_ending": "Unix"
 			}
 		},
@@ -89,18 +121,10 @@
 			}
 		},
 		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 18,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "db/typos",
 			"settings":
 			{
-				"buffer_size": 1123,
+				"buffer_size": 2100,
 				"line_ending": "Unix"
 			}
 		},
@@ -108,7 +132,7 @@
 			"file": "templates/list.html",
 			"settings":
 			{
-				"buffer_size": 165,
+				"buffer_size": 685,
 				"line_ending": "Unix",
 				"name": "<table>"
 			}
@@ -117,7 +141,7 @@
 			"file": "typo.css",
 			"settings":
 			{
-				"buffer_size": 306,
+				"buffer_size": 335,
 				"line_ending": "Unix",
 				"name": "typo.css"
 			}
@@ -126,17 +150,35 @@
 			"file": "typo.js",
 			"settings":
 			{
-				"buffer_size": 3051,
+				"buffer_size": 3122,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/landing.html",
+			"file": "templates/step1.html",
 			"settings":
 			{
-				"buffer_size": 788,
+				"buffer_size": 1868,
 				"line_ending": "Unix",
 				"name": "<!doctype html>"
+			}
+		},
+		{
+			"file": "templates/faq.html",
+			"settings":
+			{
+				"buffer_size": 3105,
+				"line_ending": "Unix",
+				"name": "faq.html"
+			}
+		},
+		{
+			"file": "templates/step2.html",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Unix",
+				"name": "step2.html"
 			}
 		},
 		{
@@ -153,7 +195,7 @@
 			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 100,
+				"buffer_size": 182,
 				"line_ending": "Unix",
 				"name": "<!doctype html>"
 			}
@@ -263,10 +305,12 @@
 		"/home/tim/dev/mistype",
 		"/home/tim/dev/mistype/db",
 		"/home/tim/dev/mistype/public",
-		"/home/tim/dev/mistype/templates"
+		"/home/tim/dev/mistype/templates",
+		"/home/tim/dev/mistype/test"
 	],
 	"file_history":
 	[
+		"/home/tim/dev/hygge/_layouts/layout.html",
 		"/home/tim/dev/mistype/assets/typo.js",
 		"/home/tim/dev/mistype/index.html",
 		"/home/tim/dev/marinintim.github.io/index.html",
@@ -393,8 +437,7 @@
 		"/home/tim/golang/src/github.com/marinintim/hello/hello.go",
 		"/home/tim/golang/src/github.com/opesun/goquery/goquery.go",
 		"/home/tim/golang/src/github.com/marinintim/devops/main.go",
-		"/home/tim/public_html/agenda/css/main.css",
-		"/home/tim/public_html/actimind/public/index.html"
+		"/home/tim/public_html/agenda/css/main.css"
 	],
 	"find":
 	{
@@ -423,6 +466,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"server.route({\n    method: 'GET',\n    path: '/',\n    handler: function(request, reply){\n        reply.view('step1')\n    }\n})",
 			"params",
 			"'",
 			" = ",
@@ -549,8 +593,7 @@
 			"ul*2>li*5",
 			"p",
 			"lorem",
-			"40",
-			"SimpleModel"
+			"40"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -623,7 +666,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -632,15 +675,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2633,
+						"buffer_size": 4666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1939,
-								1939
+								268,
+								268
 							]
 						],
 						"settings":
@@ -652,14 +695,128 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/tim/frontier/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/tim/frontier/_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/tim/frontier/_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1144,
+								1144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 4,
+					"file": "README.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "public/app.js",
 					"semi_transient": false,
 					"settings":
@@ -686,24 +843,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": true,
+					"buffer": 6,
+					"file": "db/typos",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18,
+						"buffer_size": 2100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								716,
+								716
 							]
 						],
 						"settings":
@@ -716,53 +873,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "db/typos",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1123,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCountSyntax": "plain text",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "templates/list.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 165,
+						"buffer_size": 685,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								135,
-								135
+								625,
+								625
 							]
 						],
 						"settings":
@@ -770,60 +898,65 @@
 							"WordCountShouldRun": true,
 							"WordCountSyntax": "html",
 							"auto_name": "<table>",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "typo.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 306,
+						"buffer_size": 335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								169,
-								169
+								71,
+								71
 							]
 						],
 						"settings":
 						{
-							"WordCountSyntax": "plain text",
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "css",
 							"auto_name": "typo.css",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "typo.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3051,
+						"buffer_size": 3122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								971,
+								971
 							]
 						],
 						"settings":
@@ -834,27 +967,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 588.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "templates/landing.html",
+					"buffer": 10,
+					"file": "templates/step1.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 788,
+						"buffer_size": 1868,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								788,
-								788
+								1121,
+								1121
 							]
 						],
 						"settings":
@@ -865,14 +998,72 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 42.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 11,
+					"file": "templates/faq.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2353,
+								2353
+							]
+						],
+						"settings":
+						{
+							"auto_name": "faq.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "templates/step2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1384,
+								1384
+							]
+						],
+						"settings":
+						{
+							"auto_name": "step2.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"semi_transient": false,
 					"settings":
 					{
@@ -892,30 +1083,32 @@
 							"WordCountShouldRun": true,
 							"WordCountSyntax": "plain text",
 							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 14,
 					"file": "templates/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								142,
+								142
 							]
 						],
 						"settings":
@@ -929,7 +1122,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]

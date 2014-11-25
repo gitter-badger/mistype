@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<title>Mistype — track mistakes and mistypes on your site</title>
+<meta charset="utf-8">
+<meta description="Mistype is a webapp which lets users notify you about mistakes in your content">
+
+<style>
+html, body {
+  font-family: sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+main {
+  max-width: 26em;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 18em;
+  right: 0;
+}
+
+input {
+  margin: .5em .5em .5em 0;
+  padding: 3px;
+  font-size: 1.3em;
+}
+
+input[name="email"] {
+  border: 1px solid #111;
+  width: 30ex;
+}
+
+input[type="submit"] {
+  background: cadetblue;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+}
+input[type="submit"]::before {
+  background-image: url(http://emoji.fileformat.info/gemoji/rocket.png);
+  content: ' ';
+}
+
+.doubts {
+  color: #111;
+}
+
+</style>
+<main>
+  <h1>Mistype</h1>
+  <p>Let your users tell you about errors as easy as selecting and hitting Ctrl+Enter. <span style="color: #999">(try&nbsp;it&nbsp;out:&nbsp;mitsype)</span></p>
+  <p>Register today free ↓</p>
+  <form action="/user" method="post">
+    <input type="email" placeholder="old plain email suits well" required name="email">
+    <input type="submit" value="Skyrocket my site!"> <a href="/faq" class="doubts">I have doubts</a>
+  </form>
+</main>
+
+<script src="./js" data-typo data-endpoint="/oh" data-owner="mistype.co"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56808799-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

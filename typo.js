@@ -29,7 +29,7 @@
   var noty = function(e){
       var noty = document.createElement('div');
       noty.classList.add('mistype-notification')
-      noty.innerHTML = config.text || 'Mistype was sended to our editors, thanks for your attentiveness';
+      noty.innerHTML = config.text || 'Mistype was sended to our editors, thanks for being attentive';
       document.body.appendChild(noty)
 
       setTimeout(function(){
@@ -43,7 +43,7 @@
 
   var Mistype = function() {
     for (var key in config.listeners) {
-      window.addEventListener(key, config.listeners[key].bind(this))
+      window.addEventListener(key, config.listeners[key].bind(this), false)
     }
   }
 
@@ -86,7 +86,7 @@
   if(!config.listeners) {
     config.listeners = {
       keyup: function(e) {
-        if(e.target === document.body && e.which == 13 && e.ctrlKey) {
+        if(e.target === document.body && e.which == 13 && e.ctrlKey && !e.defaultPrevented) {
           var text = this.get()
           if (text !== null) {
             this.send(text, noty)
@@ -94,6 +94,8 @@
         }
       }
     }
+  } else {
+    config.listeners = window[config.listeners]
   }
 
   if (!config.nocss) {
@@ -107,6 +109,10 @@
     })
   }
 
-  return window.mistype = new Mistype();
+  if (typeof window.mistype === 'undefined') {
+    return window.mistype = new Mistype
+  } else {
+    return new Mistype
+  }
   
 })(window)
