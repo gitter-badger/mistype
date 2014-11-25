@@ -159,6 +159,16 @@ server.route([
         method: 'GET',
         path: '/js',
         handler: function(request, reply) {
+            reply.file('typo.min.js')
+            logs.insert({type: 'access', headers: request.headers}, function(err, doc) {
+                if (err) console.log('error in logging access to js', err)
+            })
+        }
+    },
+    {
+        method: 'GET',
+        path: '/jsdev',
+        handler: function(request, reply) {
             reply.file('typo.js')
             logs.insert({type: 'access', headers: request.headers}, function(err, doc) {
                 if (err) console.log('error in logging access to js', err)
