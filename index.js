@@ -61,6 +61,12 @@ var addUser = function(email, reply) {
         }
         else {
             reply.view('step2', {id: smth.id})
+            mg.sendText(
+                'robots@mistype.co', 
+                doc.email,
+                'Hello! This is your api key',
+                'Hello there! This is api key, to keep things neat:\'' + smth.id +'\n\nAlso add robots@mistype.co to your address book, you don\'t want to miss some silly mistake only because of some false-positive spam issue, do you?\n\nBest,\nMistype\'s robots'
+                )
         }
     })
 }
