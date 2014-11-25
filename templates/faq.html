@@ -65,6 +65,9 @@ h1 {
 <p>We'll send you an email for each reported error.</p>
 <p>URL of page, class list and tag name of element with mistyped text are remembered, so you can track it back.
 
+<h2>How do I customize text of notification?</h2>
+<p>Insert data-text attribute at &lt;script> tag, like &lt script="//www.mistype.co/js" data-typo data-owner="your_api_key" data-text="That's cool, thanks">. Don't forget to escape any " or ' inside of the string. 
+
 <h2>Something else?</h2>
 <p>You can add any additional info to request: just place function name in data-additional. Our JS is checking whether is window[data-additional-value] a function, and if so, executes and attaches return value. Otherwise it's value is simply copypasted to request (it can be helpful if you generate markup on server, you could place username in this field, for example).
 
